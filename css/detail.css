@@ -1,0 +1,94 @@
+.box{
+    width: 70%;
+    margin: 10px auto;
+    /* text-align: center; */
+}
+
+/* 标题和内容 */
+.title{
+    text-align: center;
+    height: 10%;
+    margin: 10px auto;
+    /* border: 1px gray solid; */
+}
+
+/* 内容外的其他信息 */
+.info{
+    height: 10%;
+    border: 1px gray solid;
+    font-size: small;
+    color: darkgray;
+}
+
+a{
+    text-decoration: none; 
+    color: blue;
+}
+
+hr{
+    width: 70%;
+}
+
+.commentbox{
+    /* border: 1px red solid; */
+    width: 100%;
+    height: 10%;
+    margin: 10px 0;
+}
+
+.A1{
+    background-color:rgb(255,255,255,0.7);
+}
+
+/* 文章全部和评论其他信息 */
+.info,.title{
+    color: brown;
+    font-size: 20px;
+    background-color:rgb(255,255,255,0.7);
+}
+
+/* 按钮 */
+button{
+    width:200px;
+    height: 40px;
+    font-size: 20px;
+    background-color:rgb(255,255,255,0.7);
+    border-radius:5px;
+    border: none;
+    color: #808080;
+}
+
+textarea{
+    border-radius: 4px;
+}
+
+.Cinfo span{
+    color: brown;
+    width: 100%;
+    height: 10%;
+    font-size: small;
+}
+
+.content{
+    padding-left: 20px;
+    text-align: left;
+}
+
+.commentlist{
+    width: 68%;
+    margin: 0 auto;
+    background-color:rgb(255,255,255,0.7);
+    padding-left: 20px;
+    border-radius: 3px;
+}
+
+.comment{
+    /* float: left; */
+    width: 100%;
+    height: 10%;
+}
+
+
+
+
+

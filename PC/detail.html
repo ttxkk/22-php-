@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/detail.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="A1">
+            <div class="info">
+                <span>
+                    帖子id：<?php echo $pid; ?>
+                </span>
+                &nbsp;&nbsp;
+                <span>
+                    创建时间：<?php echo $create_time; ?>
+                </span>
+                &nbsp;&nbsp;
+                <span>
+                    更新时间：<?php echo @$update_time; ?>
+                </span>
+                &nbsp;&nbsp;
+                <span>
+                    作者id：<?php echo $p_uid; ?>
+                </span>
+            </div>
+            <div class="title">
+                <h2><?php echo $title; ?></h2> 
+                <hr>
+                <div class="content">
+                    内容：<?php echo $content; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

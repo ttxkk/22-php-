@@ -1,0 +1,70 @@
+body{
+    margin: 10px 0;
+    padding: 0;
+    background-image: url('../img/1.JPG');
+    background-size: 100%;
+    background-color: antiquewhite;
+}
+
+/* 包着表单的框 */
+.box{
+    width: 50%;
+    margin: 30px auto;
+    /* border: 1px red solid; */
+}
+/* 表单：标题 */
+/* form input{
+    width: 60%;
+    height: 30px;
+    margin: 0 auto;
+} */
+
+/* 提交按钮 */
+/* form button{
+    margin-left: 90%;
+} */
+
+/* 返回按钮 */
+/* a button{
+    float: left;
+    margin: 0 0 0 10%;
+} */
+
+/* 全部按钮 */
+/* button{
+    width: 160px;
+    height: 40px;
+    line-height: 36px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: '黑体';
+}  */
+
+
+p{font-size: 25px;
+    color: #808080;
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+input{width: 300px;
+    height: 30px;
+    border: none;
+    border-radius:5px;
+    margin-left: 320px;
+    }
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    background-color:rgb(255,255,255,0.7);
+    border-radius:5px;
+    margin-left: 720px;
+    border: none;
+    color: #252323;}
+textarea{
+   border: none;
+   border-radius:5px;
+   background-color:rgb(255,255,255,0.7);
+   margin-left: 60px;
+}

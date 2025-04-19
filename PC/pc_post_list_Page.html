@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/PC_post_list_Page.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="box">
+        <a href="detail.php?act=<?php echo $pid; ?>">
+            <div class="info">
+                <span>
+                    创建时间：<?php echo $create_time; ?>
+                </span>
+                &nbsp;&nbsp;
+                <span>
+                    更新时间：<?php echo $update_time; ?>
+                </span>
+                &nbsp;&nbsp;
+                <span>
+                    作者id：<?php echo $p_uid; ?>
+                </span>
+                &nbsp;&nbsp;
+                <span>
+                    帖子id：<?php echo $pid; ?>
+                </span>
+                &nbsp;&nbsp;
+                <span>
+                    <form action="delete.php" method="post">
+                        <button class="delete" name="delete" value="<?php echo $pid; ?>" onclick="if(confirm('确实要删除此条记录吗？')) return submit();else return false;" type="submit" >
+                            删除
+                        </button>
+                    </form>
+                    <form action="edit.php" method="post">
+                        <button class="edit" name="edit" value="<?php echo $pid; ?>" >编辑</button>
+                    </form>
+                </span>
+            </div>
+            <div class="title">
+                标题：<?php echo $title; ?>
+                <div class="content">
+                    内容：<?php echo $content; ?>
+                </div>
+            </div>
+            <hr>
+        </a>
+    </div>
+
+
+
+</body>
+</html>

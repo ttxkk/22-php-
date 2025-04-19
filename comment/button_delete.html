@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .delete{
+            width: 60px;
+            height: 26px;
+            font-size: 14px;
+            margin-left: 80%; 
+            background-color:rgb(247, 72, 72,0.7); 
+            color: black;
+            border: none;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <form action="comment/del_comment.php" method="post">
+        <button value="<?php echo $c_id ?>" class="delete" name="delete" onclick="if(confirm('确实要删除此条评论吗？')) return submit();else return false;" type="submit" >
+            删除
+        </button>
+    </form>
+</body>
+</html>
+

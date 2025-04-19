@@ -1,0 +1,56 @@
+.box{
+    margin: 0 auto;
+    width: 70%;
+    background-color:rgb(255,255,255,0.7);
+}
+.title{
+    /* width: 70%; */
+    font-weight: bolder;
+    border: 1px gray solid;
+    margin: 25px auto;
+    overflow: hidden;
+} 
+.info{
+    /* width: 70%; */
+    border: 1px gray solid;
+    margin: 0 auto 0 auto;
+    font-size: small;
+    color: darkgray;
+} 
+.post{
+    /* width: 70%; */
+    height: 10%;
+    margin: 0 auto 0 auto;
+    background-color:rgb(255,255,255,0.7);
+}
+
+
+
+a{
+    text-decoration: none; 
+    color: black;
+}
+
+.content{
+    height: 60px;
+    font-weight: lighter;
+    overflow: hidden;;
+}
+
+button{
+    float: right;
+    width: 100px;
+    height: 24px;
+    border: none;
+    border-radius: 3px;
+    margin: 1px 0 1px 6px;
+}
+
+.delete{
+    background-color: rgb(240, 66, 66);
+}
+
+.edit{
+    background-color: rgb(175, 230, 202);
+}
+

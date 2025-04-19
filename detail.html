@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/detail.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="info">
+            <span>
+                {{ msg }}
+                帖子id：<?php echo $pid; ?>
+            </span>
+            &nbsp;&nbsp;
+            <span>
+                创建时间：<?php echo $create_time; ?>
+            </span>
+            &nbsp;&nbsp;
+            <span>
+                更新时间：<?php echo $update_time; ?>
+            </span>
+            &nbsp;&nbsp;
+            <span>
+                作者id：<?php echo $p_uid; ?>
+            </span>
+            
+        </div>
+        <div class="title">
+            <h2><?php echo $title; ?></h2> 
+            <hr>
+            <div class="content">
+                内容：<?php echo $content; ?>
+            </div>
+        </div>
+        <div class="commentbox">
+            <form action="comment/add_comment.php" method="post">
+                <textarea name="comment" id="" cols="170" rows="4" placeholder="再此输入你的评论"></textarea>
+                <input type="text" name="pid" value='<?php echo $pid;?>' style="display:none"><br/>  
+                <button name="submit" value="1" type="submit">发表评论</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        export default{
+            data(){
+                return{
+                    msg:"121"
+                }
+            }
+        }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/comment_list_Page.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="commentlist">
+        <div class="Cinfo">
+            <span>
+                评论id：<?php echo $c_id; ?>
+            </span>
+            &nbsp;&nbsp;
+            <span>
+                创建时间：<?php echo $create_time; ?>
+            </span>
+            &nbsp;&nbsp;
+            <span>
+                评论者id：<?php echo $c_uid; ?>
+            </span>
+            &nbsp;&nbsp;
+            <span>
+                所在帖子id：<?php echo @$c_pid; ?>
+            </span>
+        </div>
+        <div class="comment">
+            <?php if($c_uid==$uid){
+             require('button_delete.html');
+         } ?>
+            <?php echo $comment; ?>
+            
+        </div>
+        <hr>
+    </div>
+
+</body>
+</html>

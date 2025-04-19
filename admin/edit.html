@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="add-news col-md-8 col-md-offset-2">
+        <h1>修改帖子</h1>
+        <form action="update.php" method="post">
+            <p>标题：</p>
+            <input type="text" name="post_title" value='<?php echo $title; ?>'>   
+            <p>内容</p>
+            <textarea name="post_content" id="" cols="120" rows="30"><?php echo $content;?></textarea>
+            <input type="text" name="pid" value='<?php echo $id;?>' style="display:none">   
+            <button type="submit" value="1" name="submit">提交</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
