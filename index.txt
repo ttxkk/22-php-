@@ -1,5 +1,0 @@
-username:
-password:
-submit
-美化
-性别复选框
